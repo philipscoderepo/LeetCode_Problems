@@ -37,37 +37,3 @@ public:
     }
 };
 
-
-
-
-
-
-
-
-
-int main()
-{
-    vector<int> nums = {10,2,5,2};
-    int maxNum,
-        big = 0,
-        secBig = 0;
-
-        for(unsigned int i = 0; i < nums.size(); i++)
-        {
-            if(nums[i] > secBig)
-            {
-                if(nums[i] > big)
-                {
-                    secBig = big;
-                    big = nums[i];
-                }
-                else
-                {
-                    secBig = nums[i];
-                }
-            }
-        }
-
-        maxNum = (big - 1) * (secBig - 1);
-        cout << maxNum;
-}
