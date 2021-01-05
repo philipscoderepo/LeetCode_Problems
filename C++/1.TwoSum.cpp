@@ -21,9 +21,5 @@ public:
     }
 };
 
-int main()
-{
-    vector<int> nums = {2,3,6};
-    int target = 6;
-}
+
 
